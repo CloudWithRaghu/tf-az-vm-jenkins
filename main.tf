@@ -133,9 +133,9 @@ resource "azurerm_windows_virtual_machine" "appvm" {
   name                = "appvm"
   resource_group_name = local.resource_group_name
   location            = local.location
-  size                = "Standard_D2S_v3"
-  admin_username      = "adminuser"
-  admin_password      = "Azure@123"
+  size                = "Standard_DS1_v2"
+  admin_username      = "azureuser"
+  admin_password      = "123456789aA#"
   network_interface_ids = [
     azurerm_network_interface.appinterface.id,
   ]
